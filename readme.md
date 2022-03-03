@@ -11,7 +11,7 @@ This code was written to collect all changes made to every wikipedia-domains. Th
 ## To run code enter following codes in command line
 
 ### Clone git-Repo and go to dir
-> git clone https://github.com/ElRapa/wiki_kafka.git
+> git clone https://github.com/ElRapa/wiki_kafka.git<br />
 > cd wiki_kafka
 
 ### Run kafka via docker-compose (Note: docker doesn't mount local drive. For mounting unhash docker-compose.yml)
