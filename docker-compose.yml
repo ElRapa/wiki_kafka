@@ -74,11 +74,15 @@ services:
       - kafka2
       - kafka3
 
-  python_kafka:
-    build: .
-    # ports:
-    #   - "5000:5000" 
-    
+  # python_kafka:
+  #   build: .
+  #   volumes:
+  #     - .:/code
+  #   depends_on:
+  #     - kafka1
+  #     - kafka2
+  #     - kafka3
+
     # db:
     #   image: postgres
     #   volumes:
