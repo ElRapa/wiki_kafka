@@ -1,4 +1,4 @@
-# Collect changes on Wikipedia and save to Kafka using Python
+# Collect changes on Wikipedia and save as Kafka-Topics using Python
 This code was written to collect all changes made to every wikipedia-domains. The changes are streamed via "https://stream.wikimedia.org/v2/stream/recentchange". Stream is extracted using pythons-sseclient-library and saved to three Kafka-Broker in a docker-container (zookeeper + confluentinc/cp-kafka). Topics on Kafka-Broker are read using Kafka-Python-library and aggregated and saved to csv using python.
 
 # General steps:
@@ -11,7 +11,7 @@ This code was written to collect all changes made to every wikipedia-domains. Th
 ## To run code enter following codes in command line
 
 ### Clone git-Repo and go to dir
-> git clone https://github.com/ElRapa/wiki_kafka.git
+> git clone https://github.com/ElRapa/wiki_kafka.git<br />
 > cd wiki_kafka
 
 ### Run kafka via docker-compose (Note: docker doesn't mount local drive. For mounting unhash docker-compose.yml)
