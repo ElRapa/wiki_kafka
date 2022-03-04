@@ -24,7 +24,7 @@ count_ger = 0
 timestamp_pre = 0
 
 for m in consumer:
-    if m.timestamp - timestamp_pre <= 10000: #must be 60000docker run -it --rm -v ${pwd}/data/Change_Log.csv --network=host python_kafka python consumer.py -h
+    if m.timestamp - timestamp_pre <= 60000:
         count_global += 1
         if m.value["meta"]["domain"] == "de.wikipedia.org":
             count_ger += 1
