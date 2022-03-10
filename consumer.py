@@ -30,7 +30,6 @@ for m in consumer:
             count_ger += 1
     else:
         timestamp_pre = m.timestamp
-        print("try to write")
         with open('Change_Log.csv', mode='w') as LogCSV:
             LOGwriter = csv.writer(LogCSV, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             LOGwriter.writerow([timestamp_pre, count_global, count_ger])
